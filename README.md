@@ -16,13 +16,13 @@ rows and C=4
 
 columns:
 
-..+-+-+-+
-..|.|.|.|
-+-+-+-+-+
-|.|.|.|.|
-+-+-+-+-+
-|.|.|.|.|
-+-+-+-+-+
+..+-+-+-+ <br />
+..|.|.|.| <br />
++-+-+-+-+ <br />
+|.|.|.|.| <br />
++-+-+-+-+ <br />
+|.|.|.|.| <br />
++-+-+-+-+ <br />
 
 There are more examples with other sizes in the samples below. Given the integers R and C describing the size of a punched card, print the ASCII art drawing of it as described above.
 
@@ -41,39 +41,39 @@ Memory limit: 1 GB.
 
 ## Test Set 1 (Visible Verdict)
 
-1≤T≤81
-2≤R≤10
-2≤C≤10
+1≤T≤81 <br />
+2≤R≤10 <br />
+2≤C≤10 <br />
 
 ## Sample input
 
-3
-3 4
-2 2
-2 3
+3 <br />
+3 4 <br />
+2 2 <br />
+2 3 <br />
 
 ## Sample output
 
-Case #1:
-..+-+-+-+
-..|.|.|.|
-+-+-+-+-+
-|.|.|.|.|
-+-+-+-+-+
-|.|.|.|.|
-+-+-+-+-+
-Case #2:
-..+-+
-..|.|
-+-+-+
-|.|.|
-+-+-+
-Case #3:
-..+-+-+
-..|.|.|
-+-+-+-+
-|.|.|.|
-+-+-+-+
+Case #1:<br />
+..+-+-+-+<br />
+..|.|.|.|<br />
++-+-+-+-+<br />
+|.|.|.|.|<br />
++-+-+-+-+<br />
+|.|.|.|.|<br />
++-+-+-+-+<br />
+Case #2:<br />
+..+-+<br />
+..|.|<br />
++-+-+<br />
+|.|.|<br />
++-+-+<br />
+Case #3:<br />
+..+-+-+<br />
+..|.|.|<br />
++-+-+-+<br />
+|.|.|.|<br />
++-+-+-+<br />
 
 # 3D Printing
 
@@ -90,10 +90,9 @@ To print a color, a printer must have at least the required amount of ink for ea
 
 The first line of the input gives the number of test cases, T.T test cases follow. Each test case consists of 3 lines. The i-th line of a test case contains 4 integers Ci, Mi, Yi, and Ki, representing the number of ink units in the i-th printer's cartridge for the colors cyan, magenta, yellow, and black, respectively.
 
-##Output
+## Output
 
-For each test case, output one line containing Case #x
-: r, where x is the test case number (starting from 1) and r is IMPOSSIBLE if there is no color that can be printed by all 3 printers. Otherwise, r must be equal to "c m y k" where c, m, y, and k are non-negative integers that add up to 106 and c≤Ci, m≤Mi, y≤Yi, and k≤Ki, for all i.
+For each test case, output one line containing Case #x: r, where x is the test case number (starting from 1) and r is IMPOSSIBLE if there is no color that can be printed by all 3 printers. Otherwise, r must be equal to "c m y k" where c, m, y, and k are non-negative integers that add up to 106 and c≤Ci, m≤Mi, y≤Yi, and k≤Ki, for all i.
 If there are multiple solutions, you may output any one of them. (See "What if a test case has multiple correct solutions?" in the Competing section of the FAQ.) This information about multiple solutions will not be explicitly stated in the remainder of the 2022 contest.
 
 ## Limits
@@ -103,31 +102,31 @@ Memory limit: 1 GB.
 
 ## Test Set 1 (Visible Verdict)
 
-1≤T≤100
-0≤Ci≤106, for all i.
-0≤Mi≤106, for all i.
-0≤Yi≤106, for all i.
-0≤Ki≤106, for all i.
+1≤T≤100 <br />
+0≤Ci≤106, for all i. <br />
+0≤Mi≤106, for all i. <br />
+0≤Yi≤106, for all i. <br />
+0≤Ki≤106, for all i. <br />
 
 
 ## Sample input
 
-3
-300000 200000 300000 500000
-300000 200000 500000 300000
-300000 500000 300000 200000
-1000000 1000000 0 0
-0 1000000 1000000 1000000
-999999 999999 999999 999999
-768763 148041 178147 984173
-699508 515362 534729 714381
-949704 625054 946212 951187
+3 <br />
+300000 200000 300000 500000 <br />
+300000 200000 500000 300000 <br />
+300000 500000 300000 200000 <br />
+1000000 1000000 0 0 <br />
+0 1000000 1000000 1000000 <br />
+999999 999999 999999 999999 <br />
+768763 148041 178147 984173 <br />
+699508 515362 534729 714381 <br />
+949704 625054 946212 951187 <br />
 
 ## Sample output
 
-Case #1: 300000 200000 300000 200000
-Case #2: IMPOSSIBLE
-Case #3: 400001 100002 100003 399994
+Case #1: 300000 200000 300000 200000 <br />
+Case #2: IMPOSSIBLE <br />
+Case #3: 400001 100002 100003 399994 <br />
 
 # d1000000
 
@@ -146,37 +145,37 @@ For each test case, output one line containing Case #x: y, where x is the test c
 
 ## Limits
 
-Memory limit: 1 GB.
-1≤T≤100
+Memory limit: 1 GB. <br />
+1≤T≤100 <br />
 
 ## Test Set 1 (Visible Verdict)
 
-Time limit: 5 seconds.
-1≤N≤10
-4≤Si≤20, for all i 
+Time limit: 5 seconds. <br />
+1≤N≤10 <br />
+4≤Si≤20, for all i <br />
 
 ## Test Set 2 (Visible Verdict)
 
-Time limit: 15 seconds.
-1≤N≤105
-4≤Si≤106, for all i.
+Time limit: 15 seconds. <br />
+1≤N≤105 <br />
+4≤Si≤106, for all i. <br />
 
 ## Sample input
 
-4
-4
-6 10 12 8
-6
-5 4 5 4 4 4
-10
-10 10 7 6 7 4 4 5 7 4
-1
-10
+4 <br />
+4 <br />
+6 10 12 8 <br />
+6 <br />
+5 4 5 4 4 4 <br />
+10 <br />
+10 10 7 6 7 4 4 5 7 4 <br />
+1 <br />
+10 <br />
 
 ## Sample output
 
-Case #1: 4
-Case #2: 5
-Case #3: 9
-Case #4: 1
+Case #1: 4 <br />
+Case #2: 5 <br />
+Case #3: 9 <br />
+Case #4: 1 <br />
 
